@@ -1,7 +1,6 @@
-let outputString = ""
-
-function beepBoop(input) {
-  outputString = ""
+export default function beepBoop(input) {
+  let outputString = "";
+  let i = 0;
   for (i = 0; i <= input; i++) {
     if ((i + '').indexOf('3') > -1) {
       outputString += "Won't you be my neighbor?"
@@ -18,16 +17,7 @@ function beepBoop(input) {
     }
   }
   if (outputString != "") {
+    
     return outputString;
   }
 }
-
-$(document).ready(function() {
-  $("#robotRogers").submit(function(event) {
-    const input = parseInt($("input#number").val());
-    let outputString = beepBoop(input);
-    event.preventDefault();
-    $("#result").show();
-    $('#result').text(outputString + "\n");
-  });
-})
