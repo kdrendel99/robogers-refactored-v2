@@ -57,5 +57,5 @@ Expect: (beepBoop(14)).toEqual(0,beep,boop,neighbor,...,beep,boop,neighbor,beep)
 
 ## Contact Information
 
-_Karlson Drendel - (360)-553-8451_
+_Karlson Drendel_
 _[https://kdrendel99.github.io/portfolio-repo/]_
